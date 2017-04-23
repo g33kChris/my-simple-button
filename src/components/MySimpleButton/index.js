@@ -1,7 +1,8 @@
 import React from 'react';
+import styles from './MySimpleButton.css';
 
 const MySimpleButton = ({ children, onClick }) => (
-    <button onClick={onClick}>
+    <button className={styles.root} onClick={onClick}>
         {children}
     </button>
 );

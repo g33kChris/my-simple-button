@@ -1,13 +1,13 @@
 {
   "name": "my-simple-button",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A simple react button example",
   "main": "dist/index.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src/components/MySimpleButton/index.js -o dist/index.js",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
+    "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "keywords": [
@@ -15,12 +15,13 @@
     "Button"
   ],
   "author": "Chris Wallace (chris@g33kchris.net)",
-  "repository": { 
-    "type" : "git",
-    "url" : "https://github.com/g33kChris/my-simple-button.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/g33kChris/my-simple-button.git"
   },
   "license": "ISC",
   "dependencies": {
+    "@g33kchris/fusionkit-css-colours": "0.0.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
@@ -32,6 +33,9 @@
     "babel-preset-stage-0": "^6.24.1"
   },
   "babel": {
-    "presets": [ "es2015", "react"]
+    "presets": [
+      "es2015",
+      "react"
+    ]
   }
 }

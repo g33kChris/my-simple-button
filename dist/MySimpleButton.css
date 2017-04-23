@@ -1,0 +1,5 @@
+@import "@g33kchris/fusionkit-css-colours";
+
+.root {
+    background-color: var(--fskt_blue);
+}
