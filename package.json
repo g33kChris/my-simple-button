@@ -15,6 +15,10 @@
     "Button"
   ],
   "author": "Chris Wallace (chris@g33kchris.net)",
+  "repository": { 
+    "type" : "git",
+    "url" : "https://github.com/g33kChris/my-simple-button.git"
+  },
   "license": "ISC",
   "dependencies": {
     "react": "^15.5.4",
