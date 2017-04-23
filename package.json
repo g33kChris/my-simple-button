@@ -1,0 +1,33 @@
+{
+  "name": "my-simple-button",
+  "version": "1.0.0",
+  "description": "A simple react button example",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src/components/MySimpleButton/index.js -o dist/index.js",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [
+    "React",
+    "Button"
+  ],
+  "author": "Chris Wallace (chris@g33kchris.net)",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "babel": {
+    "presets": [ "es2015", "react"]
+  }
+}
